@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shakti Vardhan Singh | Portfolio</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: #f9fafb;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 3rem 1rem;
+      background: linear-gradient(135deg, #6366f1, #9333ea);
+      color: white;
+    }
+
+    .profile-photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid white;
+      margin-bottom: 1rem;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .btn, .btn-outline {
+      padding: 0.6rem 1.2rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn {
+      background: white;
+      color: #4f46e5;
+    }
+
+    .btn:hover {
+      background: #e0e7ff;
+    }
+
+    .btn-outline {
+      border: 2px solid white;
+      color: white;
+    }
+
+    .btn-outline:hover {
+      background: white;
+      color: #4f46e5;
+    }
+
+    /* Projects Section */
+    .projects {
+      padding: 4rem 2rem;
+      background: white;
+    }
+
+    .projects h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .project-grid {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .card {
+      background: #f9fafb;
+      padding: 1.5rem;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .card h3 {
+      margin-bottom: 1rem;
+      color: #4f46e5;
+    }
+
+    /* About Section */
+    .about {
+      padding: 4rem 2rem;
+      text-align: center;
+      background: #f3f4f6;
+    }
+
+    .about h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    /* Contact Section */
+    .contact {
+      padding: 4rem 2rem;
+      text-align: center;
+      background: white;
+    }
+
+    .contact h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .contact-icons {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+
+    .contact-icons a {
+      font-size: 2rem;
+      text-decoration: none;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .contact-icons a:hover {
+      transform: scale(1.2);
+      color: #4f46e5;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #111827;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="your-photo.jpg" alt="Shakti Vardhan Singh" class="profile-photo">
+    <div class="hero-text">
+      <h1>Shakti Vardhan Singh</h1>
+      <p>BTech Student | Web Developer | Tech Enthusiast</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn">View Projects</a>
+        <a href="#contact" class="btn-outline">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="card">
+        <h3>Harsh Offset Press</h3>
+        <p>A business website for a printing press and corrugation works with modern UI.</p>
+        <a href="https://harshoffsetpress.vercel.app/" target="_blank" class="btn">Live Demo</a>
+      </div>
+      <div class="card">
+        <h3>Krishi Sahay</h3>
+        <p>A smart crop advisory management system for farmers with helpful features.</p>
+        <a href="https://krishisahay.vercel.app/" target="_blank" class="btn">Live Demo</a>
+      </div>
+      <div class="card">
+        <h3>Orbis Weather</h3>
+        <p>A responsive weather app that provides real-time weather data.</p>
+        <a href="https://orbis-weather.vercel.app/" target="_blank" class="btn">Live Demo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>I am a BTech student passionate about building modern web applications. With a background in React, Next.js, and full-stack projects, I enjoy creating impactful solutions in the tech space.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Feel free to connect with me through the following platforms:</p>
+    <div class="contact-icons">
+      <a href="mailto:your-email@example.com">📧</a>
+      <a href="https://github.com/yourgithub" target="_blank">🐙</a>
+      <a href="https://linkedin.com/in/yourlinkedin" target="_blank">💼</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© <span id="year"></span> Shakti Vardhan Singh. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Dynamically set the current year in footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
